@@ -250,9 +250,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 1000 5900 1000
 Wire Wire Line
-	4150 2800 4150 4300
-Wire Wire Line
-	4150 4300 4150 4400
+	4150 2800 4150 4400
 Wire Wire Line
 	5800 1300 6200 1300
 Text Label 6200 1300 0    60   ~ 0
@@ -407,14 +405,6 @@ Wire Wire Line
 Wire Wire Line
 	2500 2100 2500 1000
 Wire Wire Line
-	5000 2300 5900 2300
-Wire Wire Line
-	5900 2300 5900 2900
-Wire Wire Line
-	5900 2900 2400 2900
-Wire Wire Line
-	2400 2900 2400 1100
-Wire Wire Line
 	3300 2200 2300 2200
 Wire Wire Line
 	2300 2200 2300 1200
@@ -428,4 +418,12 @@ Wire Wire Line
 	3300 1400 1500 1400
 Wire Wire Line
 	3300 1500 1500 1500
+Wire Wire Line
+	5000 1700 5400 1700
+Wire Wire Line
+	5400 1700 5400 3100
+Wire Wire Line
+	5400 3100 2400 3100
+Wire Wire Line
+	2400 3100 2400 1100
 $EndSCHEMATC
