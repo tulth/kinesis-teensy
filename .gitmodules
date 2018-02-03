@@ -4,3 +4,6 @@
 [submodule "tmk_keyboard"]
 	path = firmware/tmk_keyboard
 	url = git@github.com:tulth/tmk_keyboard.git
+[submodule "firmware/test/submodule_teensy_cores"]
+	path = firmware/test/submodule_teensy_cores
+	url = https://github.com/PaulStoffregen/cores.git
