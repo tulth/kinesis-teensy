@@ -2,5 +2,5 @@
 	path = cca/kicad_common
 	url = git@github.com:tulth/kicad_common.git
 [submodule "tmk_keyboard"]
-	path = tmk_keyboard
+	path = firmware/tmk_keyboard
 	url = git@github.com:tulth/tmk_keyboard.git
