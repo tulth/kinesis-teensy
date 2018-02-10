@@ -1,0 +1,95 @@
+
+(rules PCB teensy-cca
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 291)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.4)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 152.4)
+    (clear 152.6)
+    (clear 76.2 (type smd_to_turn_gap))
+    (clear 38.2 (type smd_smd))
+  )
+  (padstack "Via[0-1]_685.8:330.2_um"
+    (shape
+      (circle F.Cu 685.8 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 685.8 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_685.8:330.2_um" "Via[0-1]_685.8:330.2_um" default
+  )
+  (via 
+    "Via[0-1]_685.8:330.2_um-kicad_default" "Via[0-1]_685.8:330.2_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_685.8:330.2_um-pwr" "Via[0-1]_685.8:330.2_um" pwr
+  )
+  (via_rule
+    default "Via[0-1]_685.8:330.2_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_685.8:330.2_um-kicad_default"
+  )
+  (via_rule
+    pwr "Via[0-1]_685.8:330.2_um-pwr"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 152.4)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "/kbd_matrix1" "/kbd_keypad_btn" "/kbd_program_btn" "/kbd_matrix8" "/kbd_matrix5" "/kbd_matrix3" "/kbd_matrix4" "/kbd_p138_a"
+    "/kbd_num_led" "/kbd_keypad_led" "/kbd_caps_led" "/kbd_matrix2" "/kbd_p138_sel" "/kbd_buzzer" "/kbd_scroll_led" "/kbd_matrix6"
+    "/kbd_matrix7" "/kbd_p138_c" "/kbd_p138_b" GND "/kbd_p138_nen"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 152.4)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class pwr
+    +5V
+    (clearance_class pwr)
+    (via_rule pwr)
+    (rule
+      (width 254.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

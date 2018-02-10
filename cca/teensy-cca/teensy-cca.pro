@@ -1,4 +1,4 @@
-update=Fri 02 Feb 2018 04:02:44 PM CST
+update=Thu 08 Feb 2018 07:38:11 PM CST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,18 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=../kicad_common/symbols
@@ -71,5 +83,4 @@ LibName41=t_relay
 LibName42=t_res
 LibName43=t_sensor
 LibName44=t_transistor
-[general]
-version=1
+LibName45=mechanical
